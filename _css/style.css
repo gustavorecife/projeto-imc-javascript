@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#box-cont{
+	background-color: #007bff;
+	padding: 15px;
+	color: #FFFFFF;
+}
+
+.mar-cont{
+	margin-top: 10px;
+}
+
+.size-font{
+	font-size: 26px;
+}
+
+#mar-form{
+	margin-top: -12px;
+}
+
+

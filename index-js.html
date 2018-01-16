@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Calculando IMC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="_css/bootstrap.min.css" >
+  </head>
+  <body>
+    <div id="box-cont" class="container">
+    	<h1><strong>IMC</strong></h1>
+      <h5>Calcule seu IMC e saiba se está no peso ideal.</h5>
+    </div>
+   
+    <div class="container mar-cont">
+      <h2 class="size-font">Pacientes</h2>
+      <hr class="featurette-divider">
+    </div>
+    
+    <div class="container">
+      <table class="table table-striped table-hover table-sm">
+          <tr>
+            <th>Nome</th>
+            <th>Peso</th>
+            <th>Altura(m)</th>
+            <th>IMC</th>
+          </tr>
+          <tr class="paciente">
+            <td class="info-nome">Gustavo</td>
+            <td class="info-peso">83</td>
+            <td class="info-altura">1.75</td>
+            <td class="info-imc"></td>  
+          </tr>
+          <tr class="paciente">
+            <td class="info-nome">Isabella</td>
+            <td class="info-peso">64</td>
+            <td class="info-altura">1.68</td>
+            <td class="info-imc"></td>  
+          </tr>
+          <tr class="paciente">
+            <td class="info-nome">Alfrêdo</td>
+            <td class="info-peso">74</td>
+            <td class="info-altura">1.64</td>
+            <td class="info-imc"></td>  
+          </tr>
+          <tr class="paciente">
+            <td class="info-nome">Ione</td>
+            <td class="info-peso">61</td>
+            <td class="info-altura">1.62</td>
+            <td class="info-imc"></td>  
+          </tr>
+        </table>
+        <button class="btn btn-primary" id="calcula-imcs" >Calcular IMCs</button>
+      </div>
+      
+      <div class="container mar-cont">
+          <h2 class="size-font">Adicionar novo paciente</h2>
+          <hr class="featurette-divider">
+      </div>
+
+      <div class="container">
+          <form>
+            <div id="mar-form" class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="nome">Nome:</label>
+                  <input id="campo-nome" type="text" class="form-control" placeholder="digite o nome do paciente.">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="peso">Peso:</label>
+                  <input id="campo-peso" type="number" class="form-control" placeholder="digite o peso do paciente.">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="altura">Altura:</label>
+                  <input id="campo-altura" type="number" class="form-control" placeholder="digite a altura do paciente.">
+                </div>
+            </div>
+
+            <button class="btn btn-primary" id="add-paciente">Adicionar</button>
+          </form>
+          
+        
+      </div>
+      
+      <div class="container">
+        <footer>
+          <p class="text-right">&copy; 2017 &middot; Gustavo Macêdo &middot; <a href="#">Portfólio</a>
+        </footer>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="_js/jquery-3.2.1.slim.min.js" ></script>
+    <script src="_js/popper.min.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+    <script src="_js/percorre.js"></script>
+    <script src="_js/calcula-imc.js"></script>
+    <script src="_js/imprime-nome.js"></script>
+    <script src="_js/adiciona.js"></script>
+  </body>
+</html>
